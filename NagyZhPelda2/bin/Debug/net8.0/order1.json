@@ -1,0 +1,12 @@
+{
+  "OrderItems": [
+    {
+      "ProductId": "8002",
+      "Quantity": 2
+    },
+    {
+      "ProductId": "0011",
+      "Quantity": 1
+    }
+  ]
+}

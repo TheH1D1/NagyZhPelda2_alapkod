@@ -1,0 +1,23 @@
+[
+  {
+    "Size": "S/M",
+    "Id": "8002",
+    "Name": "Pullover",
+    "Price": 6400,
+    "Quantity": 16
+  },
+  {
+    "Size": "80-100",
+    "Id": "8999",
+    "Name": "Nadrag",
+    "Price": 13400,
+    "Quantity": 11
+  },
+  {
+    "Size": "52/56",
+    "Id": "8027",
+    "Name": "Nike rugdalozo",
+    "Price": 23990,
+    "Quantity": 30
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "Id": "2653",
+    "Name": "BEBE COMFORT",
+    "Price": 13580,
+    "Quantity": 11,
+    "CanBeSet": false
+  },
+  {
+    "Id": "9812",
+    "Name": "ROBA",
+    "Price": 31180,
+    "Quantity": 3,
+    "CanBeSet": true
+  },
+  {
+    "Id": "0011",
+    "Name": "PEG PEREGO",
+    "Price": 134990,
+    "Quantity": 2,
+    "CanBeSet": true
+  }
+]

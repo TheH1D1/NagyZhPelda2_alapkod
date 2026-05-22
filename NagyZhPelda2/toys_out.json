@@ -1,0 +1,30 @@
+[
+  {
+    "Age": 3,
+    "Id": "1234",
+    "Name": "Epitokocka",
+    "Price": 5890,
+    "Quantity": 20
+  },
+  {
+    "Age": 1,
+    "Id": "7409",
+    "Name": "Csorgolabda",
+    "Price": 2690,
+    "Quantity": 16
+  },
+  {
+    "Age": 2,
+    "Id": "9987",
+    "Name": "Tuzoltoauto",
+    "Price": 15990,
+    "Quantity": 4
+  },
+  {
+    "Age": 4,
+    "Id": "4387",
+    "Name": "Ugralo panda",
+    "Price": 4900,
+    "Quantity": 57
+  }
+]

@@ -1,0 +1,141 @@
+----START OF PART1----
+Van-e szarmaztatva gyerekosztaly az absztrakt ososztalybol: True
+A NagyZhPelda2.Toy osztalyban felul van-e definialva a ToString metodus: True
+A NagyZhPelda2.Chair osztalyban felul van-e definialva a ToString metodus: True
+A NagyZhPelda2.Clothes osztalyban felul van-e definialva a ToString metodus: True
+----END OF PART1----
+
+----START OF PART2----
+Az IStock interfesz implementalva van-e: True
+Az IStock interfeszt implementalo NagyZhPelda2.Stock peldanyositasa sikeres-e: True
+A Load metodus letezik-e a NagyZhPelda2.Stock osztalyban: True
+Az adatok betoltese a json fajlokbol...
+Az adatok betoltese lefutott
+----END OF PART2----
+
+----START OF PART3----
+Nem generikus List metodus ellenorzese:
+Toy - Id: 1234, Name: Epitokocka, Price: 5890 Ft, Quantity: 10 db, Age: 3 ev
+Toy - Id: 0235, Name: Szenzoros konyv, Price: 5480 Ft, Quantity: 30 db, Age: 2 ev
+Toy - Id: 7409, Name: Csorgolabda, Price: 2690 Ft, Quantity: 18 db, Age: 1 ev
+Toy - Id: 9987, Name: Tuzoltoauto, Price: 15990 Ft, Quantity: 4 db, Age: 2 ev
+Chair - Id: 2653, Name: BEBE COMFORT, Price: 13580 Ft, Quantity: 11 db, CanBeSet: False
+Chair - Id: 9812, Name: ROBA, Price: 31180 Ft, Quantity: 3 db, CanBeSet: True
+Chair - Id: 0011, Name: PEG PEREGO, Price: 134990 Ft, Quantity: 2 db, CanBeSet: True
+Clothes - Id: 8436, Name: Kombidressz, Price: 1800 Ft, Quantity: 35 db, Size: 52/56
+Clothes - Id: 8002, Name: Pullover, Price: 6400 Ft, Quantity: 18 db, Size: S/M
+Clothes - Id: 8999, Name: Nadrag, Price: 13400 Ft, Quantity: 12 db, Size: 80-100
+
+Generikus List metodus ellenorzese:
+Jatekok listazasa:
+Toy - Id: 1234, Name: Epitokocka, Price: 5890 Ft, Quantity: 10 db, Age: 3 ev
+Toy - Id: 0235, Name: Szenzoros konyv, Price: 5480 Ft, Quantity: 30 db, Age: 2 ev
+Toy - Id: 7409, Name: Csorgolabda, Price: 2690 Ft, Quantity: 18 db, Age: 1 ev
+Toy - Id: 9987, Name: Tuzoltoauto, Price: 15990 Ft, Quantity: 4 db, Age: 2 ev
+
+Etetoszekek listazasa:
+Chair - Id: 2653, Name: BEBE COMFORT, Price: 13580 Ft, Quantity: 11 db, CanBeSet: False
+Chair - Id: 9812, Name: ROBA, Price: 31180 Ft, Quantity: 3 db, CanBeSet: True
+Chair - Id: 0011, Name: PEG PEREGO, Price: 134990 Ft, Quantity: 2 db, CanBeSet: True
+
+Ruhak listazasa:
+Clothes - Id: 8436, Name: Kombidressz, Price: 1800 Ft, Quantity: 35 db, Size: 52/56
+Clothes - Id: 8002, Name: Pullover, Price: 6400 Ft, Quantity: 18 db, Size: S/M
+Clothes - Id: 8999, Name: Nadrag, Price: 13400 Ft, Quantity: 12 db, Size: 80-100
+
+Get metodus ellenorzese:
+Id 1234: Toy - Id: 1234, Name: Epitokocka, Price: 5890 Ft, Quantity: 10 db, Age: 3 ev
+Id 0235: Toy - Id: 0235, Name: Szenzoros konyv, Price: 5480 Ft, Quantity: 30 db, Age: 2 ev
+Id 9812: Chair - Id: 9812, Name: ROBA, Price: 31180 Ft, Quantity: 3 db, CanBeSet: True
+Id 0011: Chair - Id: 0011, Name: PEG PEREGO, Price: 134990 Ft, Quantity: 2 db, CanBeSet: True
+Id 8436: Clothes - Id: 8436, Name: Kombidressz, Price: 1800 Ft, Quantity: 35 db, Size: 52/56
+----END OF PART3----
+
+----START OF PART4----
+Uj jatek hozzaadasa
+Uj etetoszek hozzaadasa
+Uj ruhazati termék hozzaadasa
+Termekek a hozzadasok utan:
+Toy - Id: 1234, Name: Epitokocka, Price: 5890 Ft, Quantity: 10 db, Age: 3 ev
+Toy - Id: 0235, Name: Szenzoros konyv, Price: 5480 Ft, Quantity: 30 db, Age: 2 ev
+Toy - Id: 7409, Name: Csorgolabda, Price: 2690 Ft, Quantity: 18 db, Age: 1 ev
+Toy - Id: 9987, Name: Tuzoltoauto, Price: 15990 Ft, Quantity: 4 db, Age: 2 ev
+Chair - Id: 2653, Name: BEBE COMFORT, Price: 13580 Ft, Quantity: 11 db, CanBeSet: False
+Chair - Id: 9812, Name: ROBA, Price: 31180 Ft, Quantity: 3 db, CanBeSet: True
+Chair - Id: 0011, Name: PEG PEREGO, Price: 134990 Ft, Quantity: 2 db, CanBeSet: True
+Clothes - Id: 8436, Name: Kombidressz, Price: 1800 Ft, Quantity: 35 db, Size: 52/56
+Clothes - Id: 8002, Name: Pullover, Price: 6400 Ft, Quantity: 18 db, Size: S/M
+Clothes - Id: 8999, Name: Nadrag, Price: 13400 Ft, Quantity: 12 db, Size: 80-100
+Toy - Id: 4387, Name: Ugralo panda, Price: 4900 Ft, Quantity: 57 db, Age: 4 ev
+Chair - Id: 6297, Name: Alfoldi etetoszek, Price: 34000 Ft, Quantity: 14 db, CanBeSet: True
+Clothes - Id: 8027, Name: Nike rugdalozo, Price: 23990 Ft, Quantity: 25 db, Size: 52/56
+
+0235 azonositoju termek torlese
+9812 azonositoju termek torlese
+8436 azonositoju termek torlese
+Termekek a torlesek utan:
+Toy - Id: 1234, Name: Epitokocka, Price: 5890 Ft, Quantity: 10 db, Age: 3 ev
+Toy - Id: 7409, Name: Csorgolabda, Price: 2690 Ft, Quantity: 18 db, Age: 1 ev
+Toy - Id: 9987, Name: Tuzoltoauto, Price: 15990 Ft, Quantity: 4 db, Age: 2 ev
+Chair - Id: 2653, Name: BEBE COMFORT, Price: 13580 Ft, Quantity: 11 db, CanBeSet: False
+Chair - Id: 0011, Name: PEG PEREGO, Price: 134990 Ft, Quantity: 2 db, CanBeSet: True
+Clothes - Id: 8002, Name: Pullover, Price: 6400 Ft, Quantity: 18 db, Size: S/M
+Clothes - Id: 8999, Name: Nadrag, Price: 13400 Ft, Quantity: 12 db, Size: 80-100
+Toy - Id: 4387, Name: Ugralo panda, Price: 4900 Ft, Quantity: 57 db, Age: 4 ev
+Chair - Id: 6297, Name: Alfoldi etetoszek, Price: 34000 Ft, Quantity: 14 db, CanBeSet: True
+Clothes - Id: 8027, Name: Nike rugdalozo, Price: 23990 Ft, Quantity: 25 db, Size: 52/56
+----END OF PART4----
+
+----START OF PART5----
+order1.json fájlbol az order1 objektum letrejott-e: True
+order2.json fájlbol az order2 objektum letrejott-e: True
+order3.json fájlbol az order3 objektum letrejott-e: True
+----END OF PART5----
+
+----START OF PART6----
+Az order1 vegosszege: 188013 Ft
+Az order2 vegosszege: 683580 Ft
+Az order3 vegosszege: 93157 Ft
+----END OF PART6----
+
+----START OF PART7----
+Az order1 eladasa sikeres-e: True
+Az order2 eladasa sikeres-e: False
+Az order3 eladasa sikeres-e: True
+
+Az eladasok utan a keszlet:
+Toy - Id: 1234, Name: Epitokocka, Price: 5890 Ft, Quantity: 10 db, Age: 3 ev
+Toy - Id: 7409, Name: Csorgolabda, Price: 2690 Ft, Quantity: 16 db, Age: 1 ev
+Toy - Id: 9987, Name: Tuzoltoauto, Price: 15990 Ft, Quantity: 4 db, Age: 2 ev
+Chair - Id: 2653, Name: BEBE COMFORT, Price: 13580 Ft, Quantity: 7 db, CanBeSet: False
+Chair - Id: 0011, Name: PEG PEREGO, Price: 134990 Ft, Quantity: 1 db, CanBeSet: True
+Clothes - Id: 8002, Name: Pullover, Price: 6400 Ft, Quantity: 16 db, Size: S/M
+Clothes - Id: 8999, Name: Nadrag, Price: 13400 Ft, Quantity: 11 db, Size: 80-100
+Toy - Id: 4387, Name: Ugralo panda, Price: 4900 Ft, Quantity: 57 db, Age: 4 ev
+Chair - Id: 6297, Name: Alfoldi etetoszek, Price: 34000 Ft, Quantity: 14 db, CanBeSet: True
+Clothes - Id: 8027, Name: Nike rugdalozo, Price: 23990 Ft, Quantity: 25 db, Size: 52/56
+----END OF PART7----
+
+----START OF PART8----
+Az 1234 azonositoju termek feltoltese 10 darabbal
+A 0011 azonositoju termek feltoltese 15 darabbal
+A 8027 azonositoju termek feltoltese 5 darabbal
+
+A keszlet a feltoltesek utan
+Toy - Id: 1234, Name: Epitokocka, Price: 5890 Ft, Quantity: 20 db, Age: 3 ev
+Toy - Id: 7409, Name: Csorgolabda, Price: 2690 Ft, Quantity: 16 db, Age: 1 ev
+Toy - Id: 9987, Name: Tuzoltoauto, Price: 15990 Ft, Quantity: 4 db, Age: 2 ev
+Chair - Id: 2653, Name: BEBE COMFORT, Price: 13580 Ft, Quantity: 7 db, CanBeSet: False
+Chair - Id: 0011, Name: PEG PEREGO, Price: 134990 Ft, Quantity: 16 db, CanBeSet: True
+Clothes - Id: 8002, Name: Pullover, Price: 6400 Ft, Quantity: 16 db, Size: S/M
+Clothes - Id: 8999, Name: Nadrag, Price: 13400 Ft, Quantity: 11 db, Size: 80-100
+Toy - Id: 4387, Name: Ugralo panda, Price: 4900 Ft, Quantity: 57 db, Age: 4 ev
+Chair - Id: 6297, Name: Alfoldi etetoszek, Price: 34000 Ft, Quantity: 14 db, CanBeSet: True
+Clothes - Id: 8027, Name: Nike rugdalozo, Price: 23990 Ft, Quantity: 30 db, Size: 52/56
+----END OF PART8----
+
+----START OF PART9----
+A Save metodus letezik-e a NagyZhPelda2.Stock osztalyban: True
+Az adatok kimentese a json fajlokba...
+Az adatok kimentese lefutott
+----END OF PART9----

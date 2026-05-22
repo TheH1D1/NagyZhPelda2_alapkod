@@ -1,0 +1,30 @@
+[
+  {
+    "Id": "1234",
+    "Name": "Epitokocka",
+    "Price": 5890,
+    "Quantity": 10,
+    "Age": 3
+  },
+  {
+    "Id": "0235",
+    "Name": "Szenzoros konyv",
+    "Price": 5480,
+    "Quantity": 30,
+    "Age": 2
+  },
+  {
+    "Id": "7409",
+    "Name": "Csorgolabda",
+    "Price": 2690,
+    "Quantity": 18,
+    "Age": 1
+  },
+  {
+    "Id": "9987",
+    "Name": "Tuzoltoauto",
+    "Price": 15990,
+    "Quantity": 4,
+    "Age": 2
+  }
+]
