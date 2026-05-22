@@ -1,13 +1,13 @@
 ﻿#region parts
 #define PART1 //Termékek adatszerkezete (6 pont)
 #define PART2 //IStock interfész megvalósítása, Load metódus (4 pont)
-//#define PART3 //List és Get metódusok (4 pont)
-//#define PART4 //Add és Remove metódusok (4 pont)
-//#define PART5 //Rendelés adatszerkezete (Order osztály) és betöltése (LoadOrder) metódus (6 pont)
-//#define PART6 //Payment metódus (4 pont)
-//#define PART7 //Sale metódus (4 pont)
-//#define PART8 //Upload metódus (4 pont)
-//#define PART9 //Save metódus (4 pont)
+#define PART3 //List és Get metódusok (4 pont)
+#define PART4 //Add és Remove metódusok (4 pont)
+#define PART5 //Rendelés adatszerkezete (Order osztály) és betöltése (LoadOrder) metódus (6 pont)
+#define PART6 //Payment metódus (4 pont)
+#define PART7 //Sale metódus (4 pont)
+#define PART8 //Upload metódus (4 pont)
+#define PART9 //Save metódus (4 pont)
 #endregion
 
 using System.Collections;
@@ -284,6 +284,14 @@ namespace NagyZhPelda2
             {
                 Console.WriteLine($"{item}");
             }
+        }
+
+        static Order LoadOrder(string filename)
+        {
+            var json = File.ReadAllText(filename);
+            var order = JsonSerializer.Deserialize<Order>(json);
+
+            return order ?? new Order();
         }
     }
 }

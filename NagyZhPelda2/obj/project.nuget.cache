@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lYEclixpgLo=",
+  "dgSpecHash": "eTtkz5dKpF4=",
   "success": true,
-  "projectFilePath": "/home/hidi/Documents/ProgII/ZH_Gyakorlas/NagyZH_Pelda_v2/NagyZhPelda2_alapkod/NagyZhPelda2/NagyZhPelda2.csproj",
-  "expectedPackageFiles": [
-    "/home/hidi/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.26/microsoft.netcore.app.host.linux-x64.8.0.26.nupkg.sha512"
-  ],
+  "projectFilePath": "/home/hidi/Documents/Egyetem-ProgII/NagyZhPelda2_alapkod/NagyZhPelda2/NagyZhPelda2.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

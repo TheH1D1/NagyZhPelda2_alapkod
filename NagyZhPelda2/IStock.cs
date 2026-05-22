@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 
 namespace NagyZhPelda2
 {
@@ -13,7 +14,7 @@ namespace NagyZhPelda2
         void Save<TProduct>(string filename) where TProduct : BabyProduct;
         List<BabyProduct> List();
         List<TProduct> List<TProduct>() where TProduct : BabyProduct;
-        BabyProduct Get(string id);
+        BabyProduct? Get(string id);
         void Add(BabyProduct product);
         void Remove(string id);
         int Payment(Order order);
@@ -41,9 +42,6 @@ namespace NagyZhPelda2
             }
         }
 
-        // Az osztálynak van egy List metódusa, amely a teljes terméklistát adja vissza, a List metódusból legyen
-        // még egy, ami egy generikus metódus, és csak a megadott típusnak megfelelő termékek listáját adja vissza. 
-
         public List<BabyProduct> List()
         {
             return BabyProducts;
@@ -54,45 +52,91 @@ namespace NagyZhPelda2
             return BabyProducts.OfType<TProduct>().ToList();
         }
 
-        // Ezenkívül van egy Get metódusa, amely pedig azonosító szerint ad vissza egy terméket. Az Add
-        // metódus egy új terméket ad hozzá a készlethez, a Remove metódus pedig azonosító alapján eltávolítja a
-        // terméket a készletből. TIPP: IF(PRODUCT IS TPRODUCT) VAGY LIST.OFTYPE<TPRODUCT>().TOLIST()
-
-        
-
-        public void Save<TProduct>(string filename) where TProduct : BabyProduct
+        public BabyProduct? Get(string id)
         {
-            throw new NotImplementedException();
-        }
-
-        public BabyProduct Get(string id)
-        {
-            throw new NotImplementedException();
+            return BabyProducts.FirstOrDefault(p => p.Id == id);
         }
 
         public void Add(BabyProduct product)
         {
-            throw new NotImplementedException();
+            BabyProducts.Add(product);
         }
 
         public void Remove(string id)
         {
-            throw new NotImplementedException();
+            var product = BabyProducts.FirstOrDefault(p => p.Id == id);
+            
+            if (product != null)
+            {
+                BabyProducts.Remove(product);
+            }
         }
 
         public int Payment(Order order)
         {
-            throw new NotImplementedException();
+            int totalPrice = 0;
+
+            foreach (var product in order.OrderItems)
+            {
+                var babyProduct = BabyProducts.FirstOrDefault(p => p.Id == product.ProductId);
+
+                if (babyProduct != null)
+                {
+                    totalPrice += babyProduct.Price * product.Quantity; 
+                }
+            }
+            totalPrice = (int) (totalPrice * 1.27) + 320; // Áfa + bruttó 320Ft kezelési költség
+            return totalPrice;
         }
 
         public bool Sale(Order order)
         {
-            throw new NotImplementedException();
+            // Ellenőrzés
+            foreach (var product in order.OrderItems)
+            {
+                var babyProduct = BabyProducts.FirstOrDefault(p => p.Id == product.ProductId);
+
+                if (babyProduct == null || babyProduct.Quantity < product.Quantity)
+                {
+                    return false;
+                }
+            }
+
+            // Levonás
+            foreach (var product in order.OrderItems)
+            {
+                var babyProduct = BabyProducts.FirstOrDefault(s => s.Id == product.ProductId);
+
+                if (babyProduct != null)
+                {
+                    babyProduct.Quantity -= product.Quantity;
+                }
+            }
+            return true;
         }
 
         public void Upload(string id, int quantity)
         {
-            throw new NotImplementedException();
+            foreach (var product in BabyProducts)
+            {
+                if (product.Id == id)
+                {
+                    product.Quantity += quantity;
+                }
+            }
+        }
+
+        // Az IStock interfészt megvalósító osztálynak legyen egy generikus Save metódusa, 
+        // amely a megadott típusú termékeket menti ki a paraméterben megadott fájlba. TIPP: WHERE T : ŐSOSZTÁLY
+
+        public void Save<TProduct>(string filename) where TProduct : BabyProduct
+        {
+            var list = List<TProduct>();
+
+            var options = new JsonSerializerOptions{WriteIndented = true};
+
+            string json = JsonSerializer.Serialize(list, options);
+            File.WriteAllText(filename, json);
         }
     }
 }

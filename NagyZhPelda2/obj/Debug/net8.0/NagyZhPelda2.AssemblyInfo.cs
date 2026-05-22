@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NagyZhPelda2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+153c5e44498b6692d54b5d2054d01addf7144ac0")]
 [assembly: System.Reflection.AssemblyProductAttribute("NagyZhPelda2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NagyZhPelda2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {}
   },
@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/hidi/Documents/ProgII/ZH_Gyakorlas/NagyZH_Pelda_v2/NagyZhPelda2_alapkod/NagyZhPelda2/NagyZhPelda2.csproj",
+      "projectUniqueName": "/home/hidi/Documents/Egyetem-ProgII/NagyZhPelda2_alapkod/NagyZhPelda2/NagyZhPelda2.csproj",
       "projectName": "NagyZhPelda2",
-      "projectPath": "/home/hidi/Documents/ProgII/ZH_Gyakorlas/NagyZH_Pelda_v2/NagyZhPelda2_alapkod/NagyZhPelda2/NagyZhPelda2.csproj",
+      "projectPath": "/home/hidi/Documents/Egyetem-ProgII/NagyZhPelda2_alapkod/NagyZhPelda2/NagyZhPelda2.csproj",
       "packagesPath": "/home/hidi/.nuget/packages/",
-      "outputPath": "/home/hidi/Documents/ProgII/ZH_Gyakorlas/NagyZH_Pelda_v2/NagyZhPelda2_alapkod/NagyZhPelda2/obj/",
+      "outputPath": "/home/hidi/Documents/Egyetem-ProgII/NagyZhPelda2_alapkod/NagyZhPelda2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/hidi/.nuget/NuGet/NuGet.Config"
@@ -26,11 +26,11 @@
         "net8.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -45,10 +45,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "imports": [
           "net461",
@@ -61,18 +62,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[8.0.26, 8.0.26]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
